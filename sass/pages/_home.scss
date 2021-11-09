@@ -1,0 +1,64 @@
+/** @format */
+
+.home {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url(../img/home/background-home-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media only screen and (max-width: $bp-largest) {
+    align-items: center;
+
+    background-image: url(../img/home/background-home-tablet.jpg);
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    background-image: url(../img/home/background-home-mobile.jpg);
+  }
+
+  &__container {
+    max-width: 144rem;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15rem 12rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      height: 90rem;
+      margin-top: 15rem;
+      padding: 0;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+  &__box {
+    width: 45rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 60rem;
+    }
+  }
+}
+
+// =================== L O G O ==========================================
+
+.logo {
+  width: auto;
+  height: auto;
+
+  position: absolute;
+  top: 6rem;
+  left: 8rem;
+}

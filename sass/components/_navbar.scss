@@ -1,0 +1,170 @@
+/** @format */
+
+.navigation {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+
+  width: 100%;
+  height: auto;
+
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(12, 1fr);
+
+  align-items: center;
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    top: 0rem;
+    right: 0rem;
+    left: auto;
+
+    display: none;
+    width: auto;
+    height: 100vh;
+  }
+}
+
+// ----------------------------------------------------------------------
+// =============== N A V B A R ==========================================
+.navbar {
+  grid-column: 6 / -1;
+  grid-row: 1 / -1;
+  z-index: 998;
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-column: 3 / -1;
+  }
+
+  width: 100%;
+  height: 10rem;
+  background-color: rgba(255, 255, 255, 0.137);
+  backdrop-filter: blur(8rem);
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 100vh;
+    width: 40rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+      padding: 12rem 5rem;
+    }
+  }
+
+  &__item {
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-right: 7rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 5rem;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    font-family: "Barlow Condensed", sans-serif;
+    color: var(--color-white);
+
+    font-size: 2.2rem;
+    font-weight: normal;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding: 3.3rem 0;
+    transition: all 0.2s ease;
+    border-bottom: 3px solid transparent;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 1rem;
+    }
+
+    &:hover {
+      border-bottom: 3px solid var(--color-grey);
+    }
+
+    &__span {
+      font-weight: bold;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.active__link {
+  border-bottom: 3px solid var(--color-white);
+}
+
+// =============== B U R G E R ==========================================
+
+.checkbox {
+  display: none;
+}
+
+.burger {
+  width: 5rem;
+  height: 5rem;
+
+  background-image: url(../img/icon-hamburger.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: none;
+
+  position: absolute;
+  top: 7rem;
+  right: 5rem;
+
+  z-index: 1000;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+  }
+}
+
+.checkbox:checked ~ .burger {
+  background-image: url(../img/icon-close.svg);
+}
+
+.checkbox:checked ~ .navigation {
+  height: 100vh;
+  display: flex;
+}
+
+// ==================== H R =============================================
+
+.hr {
+  grid-column: 3 / 6;
+  grid-row: 1 / -1;
+
+  width: 120%;
+  height: 2px;
+  z-index: 999;
+  opacity: 0.35;
+
+  background-color: var(--color-grey);
+
+  @media only screen and (max-width: $bp-largest) {
+    display: none;
+  }
+}

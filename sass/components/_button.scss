@@ -1,0 +1,45 @@
+/** @format */
+
+.main__btn {
+  width: 27.5rem;
+  height: 27.5rem;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: var(--color-black);
+  background-color: var(--color-white);
+  -webkit-tap-highlight-color: transparent;
+
+  cursor: pointer;
+
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    opacity: 0;
+    z-index: -1;
+
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover::before {
+    opacity: 0.2;
+  }
+}
