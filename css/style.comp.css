@@ -345,7 +345,7 @@ body {
         height: 100%; } }
     @media only screen and (max-width: 37.5em) {
       .destination__container {
-        padding: 2rem;
+        padding: 0 3rem;
         grid-template-columns: repeat(8, minmax(5rem, 10rem));
         grid-template-rows: repeat(10, minmax(12rem, 1fr)); } }
   .destination__heading {
@@ -408,7 +408,7 @@ body {
         grid-row: 6 / 9; } }
     @media only screen and (max-width: 37.5em) {
       .destination__text {
-        grid-column: 2 / 8; } }
+        grid-column: 1 / 9; } }
   .destination__extra {
     grid-column: 8 / -1;
     grid-row: 9 / -1;
