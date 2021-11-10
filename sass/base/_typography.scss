@@ -11,6 +11,7 @@ h3,
 h4 {
   font-family: "Bellefair", serif;
   text-transform: uppercase;
+  font-weight: normal;
 
   @media only screen and (max-width: $bp-largest) {
     text-align: center;
@@ -20,6 +21,8 @@ h4 {
 h5 {
   font-family: "Barlow Condensed", sans-serif;
   color: var(--color-grey);
+
+  font-weight: normal;
   text-transform: uppercase;
   font-size: 3.2rem;
   letter-spacing: 4.725px;
@@ -46,10 +49,50 @@ h4 {
 p {
   font-size: 2.5rem;
   color: var(--color-grey);
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 1.5px;
 
   @media only screen and (max-width: $bp-largest) {
     text-align: center;
   }
 }
 
+.sub__heading--1 {
+  font-size: 2.6rem;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+.sub__heading--2 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--color-grey);
+
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 0.235rem;
+}
+
 // -------------------------------------------------
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--color-white);
+
+  font-size: 2.4rem;
+  font-weight: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
