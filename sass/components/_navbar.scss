@@ -76,7 +76,7 @@
   }
 
   &__link {
-    padding: 3.3rem 0;
+    padding: 3.2rem 0;
     transition: all 0.2s ease;
     border-bottom: 3px solid transparent;
 
@@ -85,7 +85,7 @@
     }
 
     &:hover {
-      border-bottom: 3px solid var(--color-grey);
+      border-bottom: 5px solid rgba(208, 214, 249, 0.5);
     }
 
     &__span {
@@ -96,7 +96,7 @@
 }
 
 .active__link {
-  border-bottom: 3px solid var(--color-white);
+  border-bottom: 5px solid var(--color-white);
 }
 
 // =============== B U R G E R ==========================================
