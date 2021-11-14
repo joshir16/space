@@ -455,7 +455,8 @@ body {
   padding-top: 20rem; }
   @media only screen and (max-width: 62.5em) {
     .crew {
-      background-image: url(../img/crew/background-crew-tablet.jpg); } }
+      background-image: url(../img/crew/background-crew-tablet.jpg);
+      min-height: 120rem; } }
   @media only screen and (max-width: 37.5em) {
     .crew {
       background-image: url(../img/crew/background-crew-mobile.jpg); } }
@@ -465,19 +466,17 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, minmax(min-content, 1fr)); }
+    grid-template-rows: repeat(8, minmax(7rem, 1fr)); }
     @media only screen and (max-width: 93.75em) {
       .crew__container {
         padding-left: 5rem; } }
     @media only screen and (max-width: 62.5em) {
       .crew__container {
-        grid-template-columns: repeat(8, 1fr);
-        min-height: 100rem; } }
+        grid-template-columns: repeat(8, 1fr); } }
     @media only screen and (max-width: 37.5em) {
       .crew__container {
         padding-left: 0;
-        grid-template-rows: repeat(8, minmax(10srem, min-content));
-        min-height: 110rem; } }
+        grid-template-rows: minmax(8rem, min-content) repeat(6, minmax(12rem, 1fr)) minmax(8rem, min-content); } }
   .crew__heading {
     grid-column: 1 / 5;
     grid-row: 1 / 2;
@@ -535,7 +534,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(10, minmax(5rem, 1fr));
   transition: all 0.3s ease-in; }
   @media only screen and (max-width: 62.5em) {
     .slide {
@@ -585,4 +584,5 @@ body {
     @media only screen and (max-width: 37.5em) {
       .slide__img {
         grid-column: 1 / -1;
-        grid-row: 1 / 5; } }
+        grid-row: 1 / 6;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3); } }
