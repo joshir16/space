@@ -275,32 +275,34 @@ body {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: flex-end; }
-  @media only screen and (max-width: 75em) {
+  align-items: flex-end;
+  padding-top: 20rem; }
+  @media only screen and (max-width: 62.5em) {
     .home {
       align-items: center;
-      background-image: url(../img/home/background-home-tablet.jpg); } }
+      background-image: url(../img/home/background-home-tablet.jpg);
+      min-height: 120rem;
+      padding-top: 15rem; } }
   @media only screen and (max-width: 50em) {
     .home {
       background-image: url(../img/home/background-home-mobile.jpg); } }
   .home__container {
     max-width: 144rem;
     width: 100%;
-    height: auto;
+    min-height: 75rem;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15rem 12rem; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 62.5em) {
       .home__container {
-        height: 90rem;
-        margin-top: 15rem;
         padding: 0;
         flex-direction: column;
         justify-content: space-around; } }
   .home__box {
-    width: 45rem; }
-    @media only screen and (max-width: 75em) {
+    width: 50rem; }
+    @media only screen and (max-width: 62.5em) {
       .home__box {
         width: 60rem; } }
 

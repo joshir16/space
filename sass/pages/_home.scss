@@ -13,10 +13,13 @@
   justify-content: center;
   align-items: flex-end;
 
-  @media only screen and (max-width: $bp-largest) {
-    align-items: center;
+  padding-top: 20rem;
 
+  @media only screen and (max-width: $bp-large) {
+    align-items: center;
     background-image: url(../img/home/background-home-tablet.jpg);
+    min-height: 120rem;
+    padding-top: 15rem;
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -26,7 +29,8 @@
   &__container {
     max-width: 144rem;
     width: 100%;
-    height: auto;
+    min-height: 75rem;
+    height: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -34,9 +38,7 @@
 
     padding: 15rem 12rem;
 
-    @media only screen and (max-width: $bp-largest) {
-      height: 90rem;
-      margin-top: 15rem;
+    @media only screen and (max-width: $bp-large) {
       padding: 0;
       flex-direction: column;
       justify-content: space-around;
@@ -44,9 +46,9 @@
   }
 
   &__box {
-    width: 45rem;
+    width: 50rem;
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: $bp-large) {
       width: 60rem;
     }
   }
