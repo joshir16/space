@@ -24,6 +24,11 @@
   @media only screen and (max-width: $bp-large) {
     padding: 0;
     padding-top: 20rem;
+    background-image: url(../img/destination/background-destination-tablet.jpg);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-image: url(../img/destination/background-destination-mobile.jpg);
   }
 
   &__container {

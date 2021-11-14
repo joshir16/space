@@ -330,7 +330,11 @@ body {
   @media only screen and (max-width: 62.5em) {
     .destination {
       padding: 0;
-      padding-top: 20rem; } }
+      padding-top: 20rem;
+      background-image: url(../img/destination/background-destination-tablet.jpg); } }
+  @media only screen and (max-width: 37.5em) {
+    .destination {
+      background-image: url(../img/destination/background-destination-mobile.jpg); } }
   .destination__container {
     max-width: 144rem;
     width: 100%;
