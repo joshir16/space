@@ -56,15 +56,15 @@ p {
       text-align: center; } }
 
 .sub__heading--1 {
-  font-size: 2.6rem;
   font-family: "Bellefair", serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 2.6rem; }
 
 .sub__heading--2 {
   font-family: "Barlow Condensed", sans-serif;
   color: var(--color-grey);
-  text-transform: uppercase;
   font-size: 1.6rem;
+  text-transform: uppercase;
   letter-spacing: 0.235rem; }
 
 ul {
@@ -586,3 +586,126 @@ body {
         grid-column: 1 / -1;
         grid-row: 1 / 6;
         border-bottom: 2px solid rgba(255, 255, 255, 0.3); } }
+
+/** @format */
+.tech {
+  width: 100%;
+  height: 100vh;
+  padding-top: 20rem;
+  background-image: url(/img/technology/background-technology-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10rem; }
+  @media only screen and (max-width: 62.5em) {
+    .tech {
+      background-image: url(/img/technology/background-technology-mobile.jpg);
+      padding-bottom: 0;
+      min-height: 100rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .tech {
+      background-image: url(/img/technology/background-technology-mobile.jpg); } }
+  .tech__container {
+    width: 100%;
+    height: 70rem;
+    padding-left: 24rem;
+    display: grid;
+    grid-template-columns: min-content repeat(2, 1fr);
+    grid-template-rows: repeat(8, minmax(7rem, 1fr));
+    gap: 0 7rem;
+    align-items: center; }
+    @media only screen and (max-width: 93.75em) {
+      .tech__container {
+        padding-left: 10rem;
+        gap: 0 5rem; } }
+    @media only screen and (max-width: 75em) {
+      .tech__container {
+        height: 100%;
+        padding-left: 5rem;
+        grid-template-columns: min-content repeat(2, 1fr); } }
+    @media only screen and (max-width: 62.5em) {
+      .tech__container {
+        padding-left: 0%;
+        gap: 7rem 0;
+        grid-template-columns: minmax(5rem, 1fr) repeat(4, 1fr) minmax(5rem, 1fr);
+        grid-template-rows: repeat(4, min-content); } }
+  .tech__heading {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    text-align: left; }
+    @media only screen and (max-width: 37.5em) {
+      .tech__heading {
+        grid-column: 1 / -1;
+        text-align: center; } }
+    @media only screen and (max-width: 62.5em) {
+      .tech__heading {
+        grid-column: 2 / 5;
+        grid-row: 1 / 2; } }
+    @media only screen and (max-width: 37.5em) {
+      .tech__heading {
+        grid-column: 2 / 6;
+        text-align: center; } }
+  .tech__btns {
+    grid-column: 1 / 2;
+    grid-row: 3 / 7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    @media only screen and (max-width: 62.5em) {
+      .tech__btns {
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
+        flex-direction: row; } }
+    @media only screen and (max-width: 37.5em) {
+      .tech__btns {
+        grid-column: 2 / 6;
+        text-align: center; } }
+    .tech__btns__btn {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      font-size: 3.2rem;
+      color: var(--color-white);
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3); }
+  .tech__text {
+    grid-column: 2 / 3;
+    grid-row: 3 / 7;
+    min-width: 55rem;
+    width: 100%; }
+    @media only screen and (max-width: 75em) {
+      .tech__text {
+        max-width: 60rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .tech__text {
+        grid-column: 2 / 6;
+        grid-row: 4 / -1;
+        max-width: 100%; } }
+  .tech__img {
+    grid-column: 3 / -1;
+    grid-row: 2 / -1;
+    background-image: url(/img/technology/image-launch-vehicle-portrait.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 100%;
+    justify-self: end; }
+    @media only screen and (max-width: 62.5em) {
+      .tech__img {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        background-image: url(/img/technology/image-launch-vehicle-landscape.jpg);
+        width: 100%;
+        height: 55rem;
+        justify-self: auto; } }
+
+.active__btn {
+  color: var(--color-black) !important;
+  background-color: var(--color-white) !important; }
