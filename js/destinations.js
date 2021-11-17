@@ -47,11 +47,12 @@ const destination = function (dataSet) {
 // =========================================================
 
 navList.addEventListener("click", function (e) {
-  navLink.forEach(function (link) {
-    link.classList.remove("active__link");
-  });
-
   if (e.target.classList.contains("destination__nav__link")) {
+    // remove active link
+    navLink.forEach(function (link) {
+      link.classList.remove("active__link");
+    });
+
     dataSet = e.target.dataset.slide;
 
     e.target.classList.add("active__link");

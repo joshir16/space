@@ -718,6 +718,16 @@ body {
         @media only screen and (max-width: 62.5em) {
           .tech__slide__img--1 {
             background-image: url(../img/technology/image-launch-vehicle-landscape.jpg); } }
+      .tech__slide__img--2 {
+        background-image: url(../img/technology/image-spaceport-portrait.jpg); }
+        @media only screen and (max-width: 62.5em) {
+          .tech__slide__img--2 {
+            background-image: url(../img/technology/image-spaceport-landscape.jpg); } }
+      .tech__slide__img--3 {
+        background-image: url(../img/technology/image-space-capsule-portrait.jpg); }
+        @media only screen and (max-width: 62.5em) {
+          .tech__slide__img--3 {
+            background-image: url(../img/technology/image-space-capsule-landscape.jpg); } }
 
 .active__btn {
   color: var(--color-black) !important;

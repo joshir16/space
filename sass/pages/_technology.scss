@@ -181,6 +181,20 @@
           background-image: url(../img/technology/image-launch-vehicle-landscape.jpg);
         }
       }
+      &--2 {
+        background-image: url(../img/technology/image-spaceport-portrait.jpg);
+
+        @media only screen and (max-width: $bp-large) {
+          background-image: url(../img/technology/image-spaceport-landscape.jpg);
+        }
+      }
+      &--3 {
+        background-image: url(../img/technology/image-space-capsule-portrait.jpg);
+
+        @media only screen and (max-width: $bp-large) {
+          background-image: url(../img/technology/image-space-capsule-landscape.jpg);
+        }
+      }
     }
   }
 }

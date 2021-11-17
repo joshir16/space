@@ -17,12 +17,12 @@ const goToSlide = function (slide) {
 };
 
 dotBox.addEventListener("click", function (e) {
-  // remove active dot
-  allDots.forEach(function (dot) {
-    dot.classList.remove("active__dot");
-  });
-
   if (e.target.classList.contains("dot")) {
+    // remove active dot
+    allDots.forEach(function (dot) {
+      dot.classList.remove("active__dot");
+    });
+
     const slideNum = e.target.dataset.slide;
     goToSlide(slideNum);
 
